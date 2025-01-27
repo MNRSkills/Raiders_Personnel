@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <nav className="flex justify-between items-center p-4 bg-gray-800 text-white">
+    <nav className="flex justify-between items-center p-4 bg-gray-800 text-white font-openSans">
       {/* Logo */}
       <div className="flex items-center">
         <img
@@ -14,7 +14,7 @@ export default function Navbar() {
           alt="Logo"
           className="w-10 h-10 rounded-full sm:w-20 sm:h-20"
         />
-        <span className="ml-4 text-lg font-bold">Brand Name</span>
+        <span className="ml-4 text-lg font-bold">Raiders Personnel</span>
       </div>
 
       {/* Hamburger Menu (Mobile Only) */}
