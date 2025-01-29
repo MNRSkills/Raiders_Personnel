@@ -8,13 +8,16 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        openSans: ["var(--font-open-sans)", "sans-sarif"],
+        openSans: ["var(--font-open-sans)", "sans-serif"],
+        smooch: ["var(--font-smooch-sans)", "serif"],
       },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
       backgroundImage: {
+        "hero-logo-mic":
+          "url('https://cdn.shopify.com/s/files/1/0911/1420/9592/files/Raiders_Podcast_website_Logo.png?v=1738126877')",
         "gradient-bg":
           "linear-gradient(90deg, rgba(88,88,86,1) 31%, rgba(163,163,162,1) 100%, rgba(255,255,255,1) 100%)",
         "hero-headshot":
