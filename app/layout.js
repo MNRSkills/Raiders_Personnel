@@ -19,7 +19,7 @@ const sans = Open_Sans({
   variable: "--font-open-sans",
   subsets: ["latin"],
   weight: ["400", "700"],
-  style: ["italic", "SemiBold"],
+  style: ["italic"],
 });
 
 const smooch = Smooch_Sans({
