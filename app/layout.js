@@ -1,29 +1,33 @@
-import { Geist, Geist_Mono, Roboto, Open_Sans, Smooch_Sans } from "next/font/google";
+import {
+  Geist,
+  Geist_Mono,
+  Roboto,
+  Open_Sans,
+  Smooch_Sans,
+} from "next/font/google";
 import "./globals.css";
 import Navbar from "./Components/navbar";
 
-
-
 const roboto = Roboto({
-  subsets: ['latin'],
-  weight: ['400', '700'], // specify needed weights
-  style: ['normal', 'italic'], // optional
-  variable: '--font-roboto', // optional custom CSS variable
+  subsets: ["latin"],
+  weight: ["400", "700"], // specify needed weights
+  style: ["normal", "italic"], // optional
+  variable: "--font-roboto", // optional custom CSS variable
 });
 
 const sans = Open_Sans({
   variable: "--font-open-sans",
-  subsets: ['latin', 'SemiBold'],
-  weight: ['400', '700'],
-  style: ['italic']
-})
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  style: ["italic", "SemiBold"],
+});
 
 const smooch = Smooch_Sans({
   variable: "--font-smooch-sans",
   subsets: [],
-  weight: ['400', '700'],
-  style: ['normal']
-})
+  weight: ["400", "700"],
+  style: ["normal"],
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -36,7 +40,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${roboto.className} ${sans.variable} ${smooch.variable} antialiased`}
       >
-        <Navbar/>
+        <Navbar />
         {children}
       </body>
     </html>
